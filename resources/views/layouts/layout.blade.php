@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="navbar">
         <div class="container">
-            <img src="/image/logo/logo.png" alt="" width="15%" height="auto">
+            <a href="/"><img class="img-responsive" src="/image/logo/logo.png" alt="" width="25%" height="auto"></a>
             <button class="navbar-toggler border-0" onclick="toggleScroll()" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -51,64 +51,66 @@
     </nav>
     @yield('content')
     <footer>
-        <div class="row py-5 g-0 justify-content-center">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-3">
-                <h3 class="">WOVA GROUP</h3>
-                <p class="">Tagline dari wova group</p>
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-3">
-                <h4 class="">Menu Kami</h4>
-                <ul class="navbar-nav">
-                    <div class="row mt-3 justify-content-center">
-                        <div class="col-lg-6">
-                            <li class="nav-item">
-                                <a class="nav-link cursor-hover" href="/">Beranda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link cursor-hover" href="/about">Tentang</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link cursor-hover" href="#katalog">Katalog</a>
-                            </li>
+        <div class="container">
+            <div class="row py-5 g-0 justify-content-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3">
+                    <h3 class="">WOVA GROUP</h3>
+                    <p class="">Tagline dari wova group</p>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3">
+                    <h4 class="">Menu Kami</h4>
+                    <ul class="navbar-nav">
+                        <div class="row mt-3 justify-content-center">
+                            <div class="col-lg-6">
+                                <li class="nav-item">
+                                    <a class="nav-link cursor-hover" href="/">Beranda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link cursor-hover" href="/about">Tentang</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link cursor-hover" href="#katalog">Katalog</a>
+                                </li>
+                            </div>
+                            <div class="col-lg-6">
+                                <li class="nav-item">
+                                    <a class="nav-link cursor-hover" href="#testimoni">Testimoni</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link cursor-hover" href="#artikel">Artikel</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link cursor-hover" href="#contact">Kontak</a>
+                                </li>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <li class="nav-item">
-                                <a class="nav-link cursor-hover" href="#testimoni">Testimoni</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link cursor-hover" href="#artikel">Artikel</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link cursor-hover" href="#contact">Kontak</a>
-                            </li>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-3">
-                <h4>Kontak Kami</h4>
-                <ul class="navbar-nav">
-                    <li class="nav-item py-2">
-                        <a class="nav-link cursor-hover" href="https://www.instagram.com/wova.group/" target="_blank"><i
-                                class="bi bi-instagram pe-2"></i>Wova Group</a>
-                    </li>
-                    <li class="nav-item py-2">
-                        <a class="nav-link cursor-hover" href="https://www.tiktok.com/@wova.jasacv" target="_blank"><i
-                                class="bi bi-tiktok text-dark pe-2"></i>Wova Group</a>
-                    </li>
-                    <li class="nav-item py-2">
-                        <a class="nav-link cursor-hover" href="https://www.tiktok.com/@shivadestya" target="_blank"><i
-                                class="bi bi-tiktok text-dark pe-2"></i>Shiva Destya</a>
-                    </li>
-                    <li class="nav-item py-2">
-                        <a class="nav-link cursor-hover"
-                            href="https://www.linkedin.com/company/wova-group/posts/?feedView=all" target="_blank"><i
-                                class="bi bi-linkedin pe-2 text-primary"></i>Wova Group</a>
-                    </li>
-                </ul>
+                    </ul>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3">
+                    <h4>Kontak Kami</h4>
+                    <ul class="navbar-nav">
+                        <li class="nav-item py-2">
+                            <a class="nav-link cursor-hover" href="https://www.instagram.com/wova.group/" target="_blank"><i
+                                    class="bi bi-instagram pe-2"></i>Wova Group</a>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a class="nav-link cursor-hover" href="https://www.tiktok.com/@wova.jasacv" target="_blank"><i
+                                    class="bi bi-tiktok text-dark pe-2"></i>Wova Group</a>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a class="nav-link cursor-hover" href="https://www.tiktok.com/@shivadestya" target="_blank"><i
+                                    class="bi bi-tiktok text-dark pe-2"></i>Shiva Destya</a>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a class="nav-link cursor-hover"
+                                href="https://www.linkedin.com/company/wova-group/posts/?feedView=all" target="_blank"><i
+                                    class="bi bi-linkedin pe-2 text-primary"></i>Wova Group</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
@@ -150,7 +152,7 @@
         // Fungsi untuk menghitung jumlah halaman dari file PDF
         function countPdfPages(file, kode) {
             const reader = new FileReader();
-    
+
             reader.onload = function() {
                 const typedarray = new Uint8Array(this.result);
                 pdfjsLib.getDocument(typedarray).promise.then(function(pdf) {
@@ -161,16 +163,16 @@
                     document.getElementById(`page-count${kode}`).innerText = 'Tidak dapat membaca file PDF';
                 });
             };
-    
+
             reader.readAsArrayBuffer(file);
         }
-    
+
         // Event listener untuk input file PDF
         document.querySelectorAll('input[type="file"][name="pdf-upload"]').forEach(input => {
             input.addEventListener('change', function(event) {
                 const kode = this.id.replace('pdfUpload', '');
                 const file = event.target.files[0];
-    
+
                 if (file && file.type === 'application/pdf') {
                     countPdfPages(file, kode);
                 } else {
@@ -178,19 +180,19 @@
                 }
             });
         });
-    
+
         // Menghitung jumlah karakter pada textarea dengan batasan 300 karakter
         document.querySelectorAll('textarea[name="note"]').forEach(textarea => {
             textarea.addEventListener('input', function() {
                 const kode = this.id.replace('limitedTextarea', '');
                 let textValue = this.value;
-    
+
                 // Batasi input hingga 300 karakter
                 if (textValue.length > 300) {
                     textValue = textValue.substring(0, 300);
                     this.value = textValue;
                 }
-    
+
                 const characterCount = textValue.length;
                 document.getElementById(`wordCount${kode}`).innerText = characterCount;
             });
@@ -257,10 +259,9 @@
         });
     </script>
     <script>
-        var swiper = new Swiper('.swiper-artikel', {
+        var swiper = new Swiper(".Artikel", {
             slidesPerView: 3,
             spaceBetween: 30,
-            loop: true,
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
@@ -277,10 +278,6 @@
                 },
                 1024: {
                     slidesPerView: 3, // 3 slides untuk layar yang lebih besar (1024px ke atas)
-                    spaceBetween: 30,
-                },
-                1200: {
-                    slidesPerView: 4, // Default 4 slides untuk layar besar (1200px ke atas)
                     spaceBetween: 30,
                 }
             }
@@ -310,7 +307,7 @@
             const prevButtons = document.querySelectorAll('.prev-step');
             const formSteps = document.querySelectorAll('.form-step');
             let currentStep = 0;
-    
+
             // Fungsi untuk memeriksa validasi form dan menampilkan pesan kesalahan
             function validateCurrentStep() {
                 const inputs = formSteps[currentStep].querySelectorAll('input[required]');
@@ -322,7 +319,7 @@
                         input.classList.add('is-invalid'); // Tambahkan kelas CSS untuk validasi
                         if (errorMessage && errorMessage.classList.contains('error-message')) {
                             errorMessage.textContent = 'Field ini wajib diisi.'; // Tampilkan pesan error
-                            errorMessage.style.display = 'block'; 
+                            errorMessage.style.display = 'block';
                         }
                     } else {
                         input.classList.remove('is-invalid');
@@ -333,7 +330,7 @@
                 });
                 return isValid;
             }
-    
+
             // Fungsi untuk menyembunyikan pesan error saat pengguna mulai mengisi input
             function hideErrorOnInput(input) {
                 input.addEventListener('input', () => {
@@ -346,7 +343,7 @@
                     }
                 });
             }
-    
+
             // Tambahkan event listener untuk setiap input yang memerlukan validasi
             formSteps.forEach(step => {
                 const inputs = step.querySelectorAll('input[required]');
@@ -354,7 +351,7 @@
                     hideErrorOnInput(input); // Aktifkan hideErrorOnInput untuk setiap input
                 });
             });
-    
+
             nextButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     if (validateCurrentStep()) {
@@ -364,7 +361,7 @@
                     }
                 });
             });
-    
+
             prevButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     formSteps[currentStep].classList.remove('form-step-active');
@@ -372,7 +369,7 @@
                     formSteps[currentStep].classList.add('form-step-active');
                 });
             });
-    
+
             document.getElementById('multiStepForm').addEventListener('submit', function(event) {
                 event.preventDefault();
                 if (validateCurrentStep()) {

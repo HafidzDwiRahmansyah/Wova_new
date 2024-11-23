@@ -6,6 +6,7 @@ use App\Http\Controllers\FormController;
 use App\Http\Controllers\RuteController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\GoogleSheetController;
 
 /*
@@ -37,3 +38,11 @@ Route::post('/submit-payment', [FormController::class, 'submitPayment'])->name('
 
 Route::get('/adduseradmwova2', [RuteController::class, 'add_user'])->name('add_user');
 Route::post('/loginadmwv', [AdminController::class, 'login'])->name('login');
+
+Route::get('/contoh', function () {
+    return view('c1');
+});
+
+Route::resource('users', UserController::class);
+
+Route::get('/katalogs/delete/{id}', [AdminController::class, 'destroy']);

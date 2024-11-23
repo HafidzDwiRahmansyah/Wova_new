@@ -1,28 +1,35 @@
-@extends('layouts.layout')
-@section('title', 'Add User')
-
+@extends('layouts.layouts-adm')
+@section('title','Tambah User')
 @section('content')
-<section class="content">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="card border-0 shadow rounded-2">
-                    <div class="card-body">
-                        <h4 class="text-center py-5">Tambah User</h4>
-                        <form action="/add_user" method="post">
-                            @csrf
-                            <label class="form-label" for="name">Nama</label>
-                            <input class="form-control" type="text" name="name" id="name" required><br>
-                            <label class="form-label" for="email">Email</label>
-                            <input class="form-control" type="email" name="email" id="email" required><br>
-                            <label class="form-label" for="password">Password</label>
-                            <input class="form-control" type="password" name="password" id="password" required><br>
-                            <button class="btn btn-primary mx-auto d-block" type="submit">Simpan User</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<h1>Daftar User</h1>
+<a href="{{ route('users.create') }}" class="btn btn-primary">Tambah User</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach ($users as $user)
+        <tr>
+            <td>{{ $user->id }}</td>
+            <td>{{ $user->name }}</td>
+            <td>{{ $user->email }}</td>
+            <td>
+                <a href="{{ route('users.show', $user->id) }}" class="btn btn-info">Lihat</a>
+                <a href="{{ route('users.edit', $user->id) }}" class="btn btn-warning">Edit</a>
+                <form action="{{ route('users.destroy', $user->id) }}" method="POST" style="display:inline;">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus user ini?')">Hapus</button>
+                </form>
+            </td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
 @endsection

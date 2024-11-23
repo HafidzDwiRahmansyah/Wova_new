@@ -53,7 +53,7 @@
                                     <td>Rp. {{ number_format($item->price, 0, ',','.') }}</td>
                                     <td>
                                         <a class="btn btn-warning" href="">Update</a>
-                                        <a class="btn btn-danger" href="">Delete</a>
+                                        <a class="btn btn-danger" href="/katalogs/delete/{{ $item->id}}">Delete</a>
                                     </td>
                                 </tr>
                                 @endforeach

@@ -43,6 +43,12 @@
             </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item {{ Request::routeIs('user') ? 'active' : '' }}">
+                <a class="nav-link" href="/users">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>User</span></a>
+            </li>
+
             <li class="nav-item {{ Request::routeIs('katalog') ? 'active' : '' }}">
                 <a class="nav-link" href="/admin_katalog">
                     <i class="fas fa-fw fa-table"></i>
@@ -181,7 +187,27 @@
     <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @if (session('success'))
+    <script>
+        Swal.fire({
+            title: "Berhasil !",
+            text: "{{ session('success') }}",
+            icon: "success"
+        });
+    </script>
+    @endif
+    @if (session('error'))
+    <script>
+        Swal.fire({
+            title: "Gagal !",
+            text: "{{ session('error') }}",
+            icon: "error"
+        });
+    </script>
+    @endif
 </body>
 
 </html>

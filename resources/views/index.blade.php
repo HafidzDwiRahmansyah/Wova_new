@@ -9,7 +9,7 @@
         <div class="row justify-content-arround">
             <div class="col-lg-5">
                 <h3 class="text-white text-mobile-center-heading">WOVA GROUP</h3>
-                <p class="text-white text-mobile-center">Wova CV adalah jasa pembuatan dokumen kerja yang di
+                <p class="text-white text-justify">Wova CV adalah jasa pembuatan dokumen kerja yang di
                     kembangkan
                     dan di analisa No.1 di Indonesia. Kami menyediakan 3 tipe CV, 3 format,
                     dan berbagai template yang sesuai dengan kebutuhanmu. Sudah lebih dari
@@ -55,11 +55,11 @@
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                                <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
                                                     data-bs-target="#uploadCvModal{{ $item->kode }}"
                                                     data-bs-dismiss="modal">
                                                     Upload CV Lama
-                                                </button>
+                                                </button> -->
                                                 <a href="/form/{{ $item->kode }}" class="btn btn-secondary">
                                                     Isi Form
                                                 </a>
@@ -187,39 +187,97 @@
 </section>
 
 <section class="my-5 artikel" id="artikel">
+    <h3 class="text-center my-5">Artikel</h3>
     <div class="cotainer">
-        <h3 class="text-center my-5">Artikel</h3>
         <div class="row g-0 justify-content-center">
-            <div class="col-lg-10">
-                <div class="swiper-artikel">
+            <div class="col-lg-8">
+                <div class="swiper Artikel my-3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card border-0 shadow rounded-2">
-                                <img class="img-fluid" src="/image/testimoni.jpg" alt="testimoni2" width="100%"
-                                    height="auto">
+                                <div class="card-img-wrapper">
+                                    <img class="img-fluid rounded-top-2 card-img" src="/img/Picture1.jpg" alt="testimoni2" width="100%"
+                                        height="auto">
+                                </div>
                                 <div class="card-body">
-                                    <p class="text-secondary">Artikel kedua</p>
-                                    <h5 style="font-size: 16px;">Menjadi lebih produktif di tempat kerja</h5>
+                                    <p class="text-secondary">20 Oktober 2024</p>
+                                    <h5 style="font-size: 16px;">Hati-Hati! Ini Dia Ciri-Ciri Loker Penipuan yang Wajib Dihindari!
+                                    </h5>
                                     <p class="text-justify" style="font-size: 14px;">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos fugiat aliquam
-                                        quasi minima animi facere aliquid
-                                    </p>
-                                    <a class="btn btn-primary mx-auto d-block rounded-2" href="#">Baca Selengkapnya</a>
+                                        Siapa sih yang gak senang dapat info loker atau lowongan kerja? Tapi, jangan buru-buru seneng dulu!
+                                        Banyak loh, loker penipuan yang memanfaatkan orang-orang yang lagi cari kerja.
+                                        <a class="btn btn-primary mx-auto d-block rounded-2" href="contoh">Baca Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="card border-0 shadow rounded-2">
-                                <img class="img-fluid" src="/image/testimoni.jpg" alt="testimoni" width="100%"
-                                    height="auto">
+                                <div class="card-img-wrapper">
+                                    <img class="img-fluid rounded-top-2 card-img" src="/img/Picture2.jpg" alt="testimoni" width="100%"
+                                        height="auto">
+                                </div>
                                 <div class="card-body">
-                                    <p class="text-secondary">Artikel pertama</p>
-                                    <h5 style="font-size: 16px;">Tips and trik interview pekerjaan</h5>
+                                    <p class="text-secondary">21 Oktober 2024</p>
+                                    <h5 style="font-size: 16px;">Jangan Cuma Nunggu! Ini Cara Efektif Follow Up Hasil Interview dengan Elegan</h5>
                                     <p class="text-justify" style="font-size: 14px;">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos fugiat aliquam
-                                        quasi minima animi facere aliquid
+                                        Setelah tahap interview kerja, biasanya pelamar diminta untuk menunggu kabar hasil wawancara dengan
+                                        tenggat waktu sekitar 2 minggu atau pelamar juga bisa menanyakan tanggal pasti ...
                                     </p>
-                                    <a class="btn btn-primary mx-auto d-block rounded-2" href="#">Baca Selengkapnya</a>
+                                    <a class="btn btn-primary mx-auto d-block rounded-2" href="contoh">Baca Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 shadow rounded-2">
+                                <div class="card-img-wrapper">
+                                    <img class="img-fluid rounded-top-2 card-img" src="/img/Picture3.jpg" alt="testimoni" width="100%"
+                                        height="auto">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-secondary">22 Oktober 2024</p>
+                                    <h5 style="font-size: 16px;">Cari Cuan Sampingan? Ini Dia Rekomendasi Situs Freelance Terbaik yang Wajib Kamu Coba!
+                                    </h5>
+                                    <p class="text-justify" style="font-size: 14px;">
+                                        Sekarang ini banyak banget orang yang cari penghasilan tambahan dengan kerja freelance karena bisa
+                                        dikerjakan kapan aja dan dimana aja. Sudah banyak sekali situs yang ...
+                                    </p>
+                                    <a class="btn btn-primary mx-auto d-block rounded-2" href="contoh">Baca Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 shadow rounded-2">
+                                <div class="card-img-wrapper">
+                                    <img class="img-fluid rounded-top-2 card-img" src="/img/Picture4.jpg" alt="testimoni" width="100%"
+                                        height="auto">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-secondary">23 Oktober 2024</p>
+                                    <h5 style="font-size: 16px;">Jawaban Jitu Saat HRD Bertanya: ‘Bagaimana
+                                        Kamu Mengatur Prioritas dalam Pekerjaan?’
+                                    </h5>
+                                    <p class="text-justify" style="font-size: 14px;">
+                                        Pertanyaan "Bagaimana cara kamu mengatur prioritas dalam pekerjaan?" sering muncul saat interview. Bukan
+                                        tanpa alasan, HRD ingin tahu bagaimana kamu ...
+                                    </p>
+                                    <a class="btn btn-primary mx-auto d-block rounded-2" href="contoh">Baca Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 shadow rounded-2">
+                                <div class="card-img-wrapper">
+                                    <img class="img-fluid rounded-top-2 card-img" src="/img/Picture5.jpg" alt="testimoni" width="100%"
+                                        height="auto">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-secondary">24 Oktober 2024</p>
+                                    <h5 style="font-size: 16px;">Dapatkan Nilai Plus! Panduan Praktis untuk Meningkatkan Performa Wawancara</h5>
+                                    <p class="text-justify" style="font-size: 14px;">
+                                        Wawancara kerja sering kali menjadi momen krusial yang menentukan masa depan karier seseorang.
+                                        Salah satu cara untuk menambah poin plus di mata rekruter adalah dengan mengajukan pertanyaan yang tepat.
+                                    </p>
+                                    <a class="btn btn-primary mx-auto d-block rounded-2" href="contoh">Baca Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
@@ -230,7 +288,7 @@
     </div>
 </section>
 
-<section class=" py-5 contact" id="contact">
+<section class=" pb-5 contact" id="contact">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6">

@@ -239,7 +239,7 @@ class FormController extends Controller
                     // Hapus session setelah data dikirim ke Google Sheets
                     session()->forget('form_data');
 
-                    return redirect('/')->with('success', 'Pesanan berhasil !');
+                    return redirect('/')->with('success', 'Terimakasi kaka cv kaka akan kami proses sesuai estimasi 2-3 hari, nanti cv nya dikirim melalui via whatsaap !');
                 } elseif ($status === 'pending') {
                     // Jika transaksi masih dalam status pending
                     return response()->json(['success' => false, 'message' => 'Pembayaran masih pending.']);

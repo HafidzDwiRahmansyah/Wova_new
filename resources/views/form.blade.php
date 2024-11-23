@@ -31,7 +31,7 @@
                             <div class="mb-3">
                                 <label for="whatsapp_number" class="form-label">Nomor Whatsapp:</label>
                                 <input type="text" class="form-control" id="whatsapp_number" name="whatsapp_number"
-                                    placeholder="ex: 0895410871030" required>
+                                    placeholder="cv akan dikirim ke nomor yang kaka masukan" required>
                                 <span class="error-message" style="color: red; display: none;">Inputan ini wajib diisi !</span> <!-- Pesan error -->
 
                             </div>

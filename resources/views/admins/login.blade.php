@@ -22,10 +22,10 @@
                             <h4 class="text-center py-3">Login Page</h4>
                             <form action="/loginadmwv" method="post">
                                 @csrf
-                                <label class="form-label" for="name">Username</label>
-                                <input class="form-control" type="text" name="name" id="name"
-                                    placeholder="username..."><br>
-                                <label class="form-label" for="password">Username</label>
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-control" type="text" name="email" id="email"
+                                    placeholder="email..."><br>
+                                <label class="form-label" for="password">Password</label>
                                 <input class="form-control" type="password" name="password" id="password"
                                     placeholder="password..."><br>
                                 <button type="submit" class="btn btn-primary mx-auto d-block">Login</button>
